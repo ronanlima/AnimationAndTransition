@@ -1,5 +1,13 @@
 <resources>
 
+    <style name="BaseAppTheme" parent="android:Theme.Material">
+        <!-- habilita transicao entre janelas -->
+        <item name="android:windowContentTransitions">true</item>
+        <!-- especifica transicoes de entrada e saida -->
+        <item name="android:windowEnterTransition">@transition/explode</item>
+        <item name="android:windowExitTransition">@transition/explode</item>
+    </style>
+
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
