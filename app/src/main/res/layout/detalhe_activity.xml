@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@android:color/holo_blue_light"
+        android:id="@+id/background"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="112dp"
+        android:layout_height="112dp"
+        android:src="@drawable/ico_beer"
+        android:id="@+id/imageButton"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15dp"
+        android:transitionName="picture"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Nome"
+        android:ems="10"
+        android:layout_below="@+id/background"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="11dp"
+        android:id="@+id/edit_nome"
+        android:layout_alignEnd="@+id/imageButton" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/edit_nome"
+        android:id="@+id/edit_tel"
+        android:layout_alignEnd="@+id/edit_nome"
+        android:text="Telefone" />
+
+    <Button
+        android:text="Salvar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_salvar"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>
